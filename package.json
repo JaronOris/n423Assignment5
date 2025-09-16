@@ -1,0 +1,38 @@
+{
+  "name": "n423assignment5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "serve": "live-server dist",
+    "tailwind": "tailwindcss -i ./dist/css/tailwind.css -o ./dist/css/styles.css --watch",
+    "build-webpack": "webpack",
+    "deploy": "firebase deploy --execpt functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaronOris/n423Assignment5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JaronOris/n423Assignment5/issues"
+  },
+  "homepage": "https://github.com/JaronOris/n423Assignment5#readme",
+  "dependencies": {
+    "firebase": "^12.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}
